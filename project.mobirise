@@ -3433,7 +3433,7 @@
             "modalName": "ingle-inverter",
             "modalSize": "medium",
             "modalHeader": true,
-            "modalTitle": "120 Ah Inverter",
+            "modalTitle": "120 Ah Gel Battery",
             "modalBody": "<img src=\"@PROJECT_PATH@/assets/images/img-20200914-wa0043.jpg\" width=\"250\" height=\"200\">\n",
             "modalBodyHTML": true,
             "modalFooter": true,
@@ -3458,7 +3458,7 @@
           ],
           "_name": "witsec-modal-window-block",
           "_anchor": "witsec-modal-window-block-28",
-          "modalWindow": "<div class=\"modal fade\" id=\"ingle-inverter\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ingle-inverterLabel\" aria-hidden=\"true\">  <div class=\"modal-dialog  modal-dialog-centered\" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-header\">  <h5 class=\"no-anim modal-title\" id=\"ingle-inverterLabel\">120 Ah Inverter</h5>  <a href=\"#\" class=\"no-anim close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a></div><div class=\"modal-body\" id=\"ingle-inverter_body\"><img src=\"@PROJECT_PATH@/assets/images/img-20200914-wa0043.jpg\" width=\"250\" height=\"200\">\n</div><div class=\"modal-footer\"><div class=\"mbr-section-btn\"><a href=\"/place-your-order.html\" class=\"no-anim btn btn-primary display-4\" target=_new>Buy Now</a></div></div>    </div>  </div></div><script>document.addEventListener(\"DOMContentLoaded\", function() {  $(\"#ingle-inverter\").on(\"hidden.bs.modal\", function () {    var html = $( \"#ingle-inverter_body\" ).html();    $( \"#ingle-inverter_body\" ).empty();    $( \"#ingle-inverter_body\" ).append(html);  })});</script>"
+          "modalWindow": "<div class=\"modal fade\" id=\"ingle-inverter\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"ingle-inverterLabel\" aria-hidden=\"true\">  <div class=\"modal-dialog  modal-dialog-centered\" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-header\">  <h5 class=\"no-anim modal-title\" id=\"ingle-inverterLabel\">120 Ah Gel Battery</h5>  <a href=\"#\" class=\"no-anim close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a></div><div class=\"modal-body\" id=\"ingle-inverter_body\"><img src=\"@PROJECT_PATH@/assets/images/img-20200914-wa0043.jpg\" width=\"250\" height=\"200\">\n</div><div class=\"modal-footer\"><div class=\"mbr-section-btn\"><a href=\"/place-your-order.html\" class=\"no-anim btn btn-primary display-4\" target=_new>Buy Now</a></div></div>    </div>  </div></div><script>document.addEventListener(\"DOMContentLoaded\", function() {  $(\"#ingle-inverter\").on(\"hidden.bs.modal\", function () {    var html = $( \"#ingle-inverter_body\" ).html();    $( \"#ingle-inverter_body\" ).empty();    $( \"#ingle-inverter_body\" ).append(html);  })});</script>"
         },
         {
           "alias": false,
