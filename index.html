@@ -18,8 +18,10 @@
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.min.css">
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link href="assets/fonts/style.css" rel="stylesheet">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
   
@@ -98,7 +100,7 @@
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-20" data-rv-view="321">
+<section class="mbr-section" id="witsec-modal-window-block-20" data-rv-view="106">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -154,7 +156,7 @@
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-21" data-rv-view="322">
+<section class="mbr-section" id="witsec-modal-window-block-21" data-rv-view="107">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -207,7 +209,7 @@
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-22" data-rv-view="323">
+<section class="mbr-section" id="witsec-modal-window-block-22" data-rv-view="108">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -261,7 +263,7 @@
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-23" data-rv-view="324">
+<section class="mbr-section" id="witsec-modal-window-block-23" data-rv-view="109">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -314,7 +316,7 @@
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-24" data-rv-view="325">
+<section class="mbr-section" id="witsec-modal-window-block-24" data-rv-view="110">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -371,7 +373,7 @@
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-25" data-rv-view="326">
+<section class="mbr-section" id="witsec-modal-window-block-25" data-rv-view="111">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -425,7 +427,7 @@
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-26" data-rv-view="327">
+<section class="mbr-section" id="witsec-modal-window-block-26" data-rv-view="112">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -482,7 +484,7 @@
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-27" data-rv-view="328">
+<section class="mbr-section" id="witsec-modal-window-block-27" data-rv-view="113">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -536,7 +538,7 @@
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-2a" data-rv-view="331">
+<section class="mbr-section" id="witsec-modal-window-block-2a" data-rv-view="114">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -589,7 +591,60 @@
 
 </section>
 
-<section class="mbr-section" id="witsec-modal-window-block-28" data-rv-view="329">
+<section class="mbr-section" id="witsec-modal-window-block-2e" data-rv-view="115">
+
+	<style>
+	/* Let's not animate the contents of modal windows */
+	.no-anim {
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+	</style>
+
+	
+	
+	<div><div class="modal fade" id="Luggage" tabindex="-1" role="dialog" aria-labelledby="LuggageLabel" aria-hidden="true">  <div class="modal-dialog  modal-dialog-centered" style="height:auto" role="document">    <div class="modal-content"><div class="modal-header">  <h5 class="no-anim modal-title" id="LuggageLabel">Airport Luggage Scanner</h5>  <a href="#" class="no-anim close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></a></div><div class="modal-body" id="Luggage_body"><img src="assets/images/img-20200922-wa0008-538x538.jpg" width="270" height="320"></div><div class="modal-footer"><div class="mbr-section-btn"><a href="/place-your-order.html" class="no-anim btn btn-primary display-4" target="_new">Buy Now</a></div></div>    </div>  </div></div><script>document.addEventListener("DOMContentLoaded", function() {  $("#Luggage").on("hidden.bs.modal", function () {    var html = $( "#Luggage_body" ).html();    $( "#Luggage_body" ).empty();    $( "#Luggage_body" ).append(html);  })});</script></div>
+
+	<script>
+	if (typeof OpenModal === 'undefined') {
+		OpenModal = function(modalName) {
+			if ($('#' + modalName).length)
+				$('#' + modalName).modal('show');
+			else
+				alert("Sorry, but there is no modal for " + modalName);
+		}
+	}
+
+	function modalSetCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+
+	function modalGetCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+	</script>
+
+</section>
+
+<section class="mbr-section" id="witsec-modal-window-block-28" data-rv-view="116">
 
 	<style>
 	/* Let's not animate the contents of modal windows */
@@ -783,11 +838,10 @@
                     </div>
                     <div class="card-box">
                         <h4 class="card-title mbr-fonts-style display-5">
-                            Remote Control Solar Powered Lamp</h4>
+                            Solar Fence Light</h4>
                         <p class="mbr-text mbr-fonts-style display-7"></p>
                         <!--Btn-->
-                        <div class="mbr-section-btn align-left"><a href="place-your-order.html" class="btn btn-primary-outline display-4" target="_blank">
-                                BUY NOW</a></div>
+                        <div class="mbr-section-btn align-left"><a href="place-your-order.html" class="btn btn-primary-outline display-4" target="_blank">NGN 45,000</a></div>
                     </div>
                 </div>
             </div>
@@ -1014,15 +1068,83 @@
             <div class="card col-12 col-md-6 p-3 col-lg-4 last-child">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <img src="assets/images/wifi-bulb-camera-15k-1.jpg" alt="William's Security">
+                        <img src="assets/images/wifi-bulb-camera-15k-2-450x800.jpg" alt="William's Security">
                     </div>
                     <div class="card-box">
                         <h4 class="card-title mbr-fonts-style display-5">
-                            3D Panoramic Bulb Camera</h4>
+                            WiFi Bulb Camera</h4>
+                        <p class="mbr-text mbr-fonts-style display-7"></p>
+                        <!--Btn-->
+                        <div class="mbr-section-btn align-left"><a href="place-your-order.html" class="btn btn-primary-outline display-4" target="_blank">
+                                NGN 20,000</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--Card-4-->
+            
+        </div>
+    </div>
+</section>
+
+<section class="services1 cid-sblzQfKFtP" id="services1-2d">
+    <!---->
+    
+    <!---->
+    <!--Overlay-->
+    
+    <!--Container-->
+    <div class="container">
+        <div class="row justify-content-center">
+            <!--Titles-->
+            <div class="title pb-5 col-12">
+                
+                
+            </div>
+            <!--Card-1-->
+            <div class="card col-12 col-md-6 p-3 col-lg-4">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="assets/images/img-20200922-wa0006-696x696.jpg" alt="Williams' Security">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-5">
+                            4MP CCTV Camera</h4>
                         <p class="mbr-text mbr-fonts-style display-7"></p>
                         <!--Btn-->
                         <div class="mbr-section-btn align-left"><a href="place-your-order.html" class="btn btn-primary-outline display-4" target="_blank">
                                 NGN 15,000</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--Card-2-->
+            <div class="card col-12 col-md-6 p-3 col-lg-4">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="assets/images/img-20200914-wa0034-506x506.jpg" alt="Williams' Security">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-5">
+                            IP Wireless Camera</h4>
+                        <p class="mbr-text mbr-fonts-style display-7"></p>
+                        <!--Btn-->
+                        <div class="mbr-section-btn align-left"><a href="place-your-order.html" class="btn btn-primary-outline display-4" target="_blank">
+                                NGN 50,000</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--Card-3-->
+            <div class="card col-12 col-md-6 p-3 col-lg-4 last-child">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="assets/images/img-20200914-wa0030-506x506.jpg" alt="Williams' Security">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-5">
+                            Panoramic WiFi Camera</h4>
+                        <p class="mbr-text mbr-fonts-style display-7"></p>
+                        <!--Btn-->
+                        <div class="mbr-section-btn align-left"><a href="place-your-order.html" class="btn btn-primary-outline display-4" target="_blank">
+                                NGN 25,00</a></div>
                     </div>
                 </div>
             </div>
@@ -1168,7 +1290,7 @@
                 <h3 class="mbr-section-subtitle mbr-light mbr-fonts-style display-5"><strong>Locks</strong></h3>
             </div>
             <!--Card-1-->
-            <div class="card col-12 col-md-6 p-3 col-lg-4">
+            <div class="card col-12 col-md-6 p-3 col-lg-3">
                 <div class="card-wrapper">
                     <div class="card-img">
                         <img src="assets/images/hotel-energy-saver-switch-3.jpg" alt="Willaims' Security">
@@ -1184,7 +1306,7 @@
                 </div>
             </div>
             <!--Card-2-->
-            <div class="card col-12 col-md-6 p-3 col-lg-4">
+            <div class="card col-12 col-md-6 p-3 col-lg-3">
                 <div class="card-wrapper">
                     <div class="card-img">
                         <img src="assets/images/mifare-hotel-card-lock-3.jpg" alt="Williams' Security">
@@ -1199,7 +1321,7 @@
                 </div>
             </div>
             <!--Card-3-->
-            <div class="card col-12 col-md-6 p-3 col-lg-4 last-child">
+            <div class="card col-12 col-md-6 p-3 col-lg-3">
                 <div class="card-wrapper">
                     <div class="card-img">
                         <img src="assets/images/img-20200916-wa0004.jpg" alt="Williams' Security">
@@ -1214,7 +1336,21 @@
                 </div>
             </div>
             <!--Card-4-->
-            
+            <div class="card col-12 col-md-6 p-3 col-lg-3 last-child">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="assets/images/img-20200916-wa0005-506x675.jpg" alt="Williams' Security">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-5">
+                            Insertion Hotel Card Lock</h4>
+                        <p class="mbr-text mbr-fonts-style display-7"></p>
+                        <!--Btn-->
+                        <div class="mbr-section-btn align-left"><a href="place-your-order.html" class="btn btn-primary-outline display-4" target="_blank">
+                                NGN 30,000</a></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -1421,6 +1557,88 @@
     </div>
 </section>
 
+<section class="services1 cid-sblzdJUu2r" id="services1-2b">
+    <!---->
+    
+    <!---->
+    <!--Overlay-->
+    
+    <!--Container-->
+    <div class="container">
+        <div class="row justify-content-center">
+            <!--Titles-->
+            <div class="title pb-5 col-12">
+                
+                
+            </div>
+            <!--Card-1-->
+            <div class="card col-12 col-md-6 p-3 col-lg-3">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="assets/images/img-20200922-wa0009-696x696.jpg" alt="Williams' Security">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-5">
+                            Airport Luggage Scanner</h4>
+                        <p class="mbr-text mbr-fonts-style display-7"></p>
+                        <!--Btn-->
+                        <div class="mbr-section-btn align-left"><a href="place-your-order.html" class="btn btn-primary-outline display-4" target="_blank">
+                                NGN 2,000,000</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--Card-2-->
+            <div class="card col-12 col-md-6 p-3 col-lg-3">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="assets/images/img-20200922-wa0004-220x165.jpg" alt="Williams' Security">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-5">
+                            Standalone Smoke Detector</h4>
+                        <p class="mbr-text mbr-fonts-style display-7"></p>
+                        <!--Btn-->
+                        <div class="mbr-section-btn align-left"><a href="place-your-order.html" class="btn btn-primary-outline display-4" target="_blank">
+                                NGN 8,000</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--Card-3-->
+            <div class="card col-12 col-md-6 p-3 col-lg-3">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="assets/images/img-20200922-wa0002-696x928.jpg" alt="Williams' Security">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-5">
+                            Fire Alarm Cable</h4>
+                        <p class="mbr-text mbr-fonts-style display-7">Length: 500m</p>
+                        <!--Btn-->
+                        <div class="mbr-section-btn align-left"><a href="place-your-order.html" class="btn btn-primary-outline display-4" target="_blank">
+                                NGN 110,000</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--Card-4-->
+            <div class="card col-12 col-md-6 p-3 col-lg-3 last-child">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="assets/images/img-20200922-wa0005-506x675.jpg" alt="Williams' Security">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-5">
+                            CCTV RG59 Cable</h4>
+                        <p class="mbr-text mbr-fonts-style display-7"></p>
+                        <!--Btn-->
+                        <div class="mbr-section-btn align-left"><a href="place-your-order.html" class="btn btn-primary-outline display-4" target="_blank">
+                                NGN 30,000</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="services1 cid-saKzrfn9oM" id="comms">
     <!---->
     
@@ -1437,7 +1655,7 @@
                 
             </div>
             <!--Card-1-->
-            <div class="card col-12 col-md-6 p-3 col-lg-4">
+            <div class="card col-12 col-md-6 p-3 col-lg-3">
                 <div class="card-wrapper">
                     <div class="card-img">
                         <img src="assets/images/4g-sim-router-25k.jpeg" alt="William's Security">
@@ -1453,7 +1671,7 @@
                 </div>
             </div>
             <!--Card-2-->
-            <div class="card col-12 col-md-6 p-3 col-lg-4">
+            <div class="card col-12 col-md-6 p-3 col-lg-3">
                 <div class="card-wrapper">
                     <div class="card-img">
                         <img src="assets/images/img-20200914-wa0056.jpg" alt="Williams' Security">
@@ -1469,22 +1687,36 @@
                 </div>
             </div>
             <!--Card-3-->
-            <div class="card col-12 col-md-6 p-3 col-lg-4 last-child">
+            <div class="card col-12 col-md-6 p-3 col-lg-3">
                 <div class="card-wrapper">
                     <div class="card-img">
                         <img src="assets/images/img-20200914-wa0026.jpg" alt="WIlliams' Website">
                     </div>
                     <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-5">1 TeraByte SATA HDD</h4>
+                        <h4 class="card-title mbr-fonts-style display-5">1 TeraByte CCTV Hard Disk</h4>
                         <p class="mbr-text mbr-fonts-style display-7"></p>
                         <!--Btn-->
                         <div class="mbr-section-btn align-left"><a href="place-your-order.html" class="btn btn-primary-outline display-4" target="_blank">
-                                NGN 15,000</a></div>
+                                NGN 20,000</a></div>
                     </div>
                 </div>
             </div>
             <!--Card-4-->
-            
+            <div class="card col-12 col-md-6 p-3 col-lg-3 last-child">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="assets/images/img-20200922-wa0003-384x384.jpg" alt="Williams' Security">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-5">
+                            Boefeng Radio</h4>
+                        <p class="mbr-text mbr-fonts-style display-7"></p>
+                        <!--Btn-->
+                        <div class="mbr-section-btn align-left"><a href="place-your-order.html" class="btn btn-primary-outline display-4" target="_blank">
+                                NGN 8,000</a></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -1504,7 +1736,7 @@
                 
             </div>
             <!--Card-1-->
-            <div class="card col-12 col-md-6 p-3 col-lg-4">
+            <div class="card col-12 col-md-6 p-3 col-lg-3">
                 <div class="card-wrapper">
                     <div class="card-img">
                         <img src="assets/images/img-20200914-wa0019.jpg" alt="Williams' Security">
@@ -1520,7 +1752,7 @@
                 </div>
             </div>
             <!--Card-2-->
-            <div class="card col-12 col-md-6 p-3 col-lg-4">
+            <div class="card col-12 col-md-6 p-3 col-lg-3">
                 <div class="card-wrapper">
                     <div class="card-img">
                         <img src="assets/images/img-20200916-wa0009.jpg" alt="Williams' Security">
@@ -1535,7 +1767,7 @@
                 </div>
             </div>
             <!--Card-3-->
-            <div class="card col-12 col-md-6 p-3 col-lg-4 last-child">
+            <div class="card col-12 col-md-6 p-3 col-lg-3">
                 <div class="card-wrapper">
                     <div class="card-img">
                         <img src="assets/images/img-20200916-wa0011.jpg" alt="Williams' Security">
@@ -1551,7 +1783,20 @@
                 </div>
             </div>
             <!--Card-4-->
-            
+            <div class="card col-12 col-md-6 p-3 col-lg-3 last-child">
+                <div class="card-wrapper">
+                    <div class="card-img">
+                        <img src="assets/images/img-20200922-wa0007-320x248.jpg" alt="Williams' Security">
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style display-5">Intercom Phone</h4>
+                        <p class="mbr-text mbr-fonts-style display-7"></p>
+                        <!--Btn-->
+                        <div class="mbr-section-btn align-left"><a href="place-your-order.html" class="btn btn-primary-outline display-4" target="_blank">
+                                NGN 5,000</a></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -1572,7 +1817,7 @@
                     <br>
                     <br><strong>Contacts</strong>
                     <br>
-                    <br>Email: <a href="mailto:ascentralsecuritytech@gmail.com" class="text-primary">ascentralsecuritytech@gmail.com&nbsp; &nbsp; </a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>Phone:<a href="tel:08073535933" class="text-primary"> 08073535933 </a>                   <br>WhatsApp: <a href="https://wa.me/08073535933" class="text-primary">08073535933</a><strong><a href="https://wa.me/08073535933" class="text-primary">&nbsp; &nbsp; </a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong></p>
+                    <br>Email: <a href="mailto:ascentralsecuritytech@gmail.com" class="text-primary">ascentralsecuritytech@gmail.com&nbsp; &nbsp; </a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>Phone:<a href="tel:08073535933" class="text-primary"> 08073535933 </a>                   <br>WhatsApp: <a href="https://wa.me/08161182361" class="text-primary">08161182361</a><strong><a href="https://wa.me/08073535933" class="text-primary">&nbsp; &nbsp; </a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong></p>
             </div>
             <div class="col-12 col-md-3 mbr-fonts-style display-7">
                 <p class="mbr-text"><strong>Our shop</strong><br>
@@ -1610,8 +1855,9 @@
             </div>
         </div>
     </div>
-</section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/r" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;"><a href="https://mobirise.site/i" style="color:#aaa;">Designed with Mobirise</a> maker</p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/witsec-mailform/witsec-mailform.js"></script>  
+</section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/p" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;">Designed with Mobirise <a href="https://mobirise.site/j" style="color:#aaa;">web page</a> builder</p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/witsec-mailform/witsec-mailform.js"></script>  
   
   
-</body>
+  <input name="animation" type="hidden">
+  </body>
 </html>
